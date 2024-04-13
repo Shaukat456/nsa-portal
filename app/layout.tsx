@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "NSA-Notifying Stories Around",
-  description: "Notifying Stories Around",
+  title: "NSA-Portal",
+  description: "NSA PORTAL",
 };
 
 export default function RootLayout({
