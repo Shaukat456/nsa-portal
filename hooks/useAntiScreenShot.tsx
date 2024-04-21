@@ -11,7 +11,6 @@ const useAntiScreenshot = () => {
     overlay.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     overlay.style.zIndex = "9999";
     overlay.style.display = "none";
-
     document.body.appendChild(overlay);
 
     const handleBlur = () => {
