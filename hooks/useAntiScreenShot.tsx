@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-
 const useAntiScreenshot = () => {
   useEffect(() => {
     const overlay = document.createElement("div");
