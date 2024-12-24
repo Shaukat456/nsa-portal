@@ -1,18 +1,29 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { domains } from "../data/team";
 import clsx from "clsx";
 
-interface DomainTabsProps {
+const domains = {
+  Excom: {
+    name: "Excom",
+    description: "Excom",
+  },
+  Head: {
+    name: "Head",
+    description: "Head",
+  },
+  Member: {
+    name: "Core",
+    description: "Core",
+  },
+};
+
+interface TabsProps {
   activeDomain: string;
   onDomainChange: (domain: string) => void;
 }
 
-export const DomainTabs = ({
-  activeDomain,
-  onDomainChange,
-}: DomainTabsProps) => {
+export const DomainTabs = ({ activeDomain, onDomainChange }: TabsProps) => {
   return (
     <div className="flex justify-center mb-12 px-4 sm:px-0">
       <div className="bg-white/10 backdrop-blur-lg rounded-xl p-1 flex flex-wrap space-x-1 sm:space-x-1">
